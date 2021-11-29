@@ -8,9 +8,9 @@ namespace Vxchin.HomePage.Pages
     [IgnoreAntiforgeryToken]
     public class ErrorModel : PageModel
     {
-        public string RequestId { get; set; }
+        public string? RequestId { get; set; }
 
-        public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
+        public bool ShowRequestId => !String.IsNullOrEmpty(RequestId);
 
         private readonly ILogger<ErrorModel> _logger;
 
