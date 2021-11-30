@@ -1,18 +1,20 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 <head>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="color-scheme" content="light dark"/>
 	<title>@ViewData["Title"] - 秦文轩的个人空间</title>
-	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
 	<header>
-		<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-			<div class="container">
+		@*<nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom box-shadow mb-3">*@
+		<nav class="navbar navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
 				<a class="navbar-brand" asp-area="" asp-page="/Index">秦文轩的个人空间</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+@*				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
 						aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -22,7 +24,7 @@
 							<a class="nav-link text-dark" asp-area="" asp-page="/Index">首页</a>
 						</li>
 					</ul>
-				</div>
+				</div>*@
 			</div>
 		</nav>
 	</header>
@@ -34,7 +36,7 @@
 
 	<footer class="border-top footer text-muted">
 		<div class="container">
-			&copy; 2019-2021 秦文轩 (vxchin) <a href="http://beian.miit.gov.cn/" class="float-right" target="_blank">陕ICP备15002192号</a>
+			&copy; 2019-2021 秦文轩 (vxchin) <a href="http://beian.miit.gov.cn/" class="text-decoration-none float-end" target="_blank">陕ICP备15002192号</a>
 		</div>
 	</footer>
 
