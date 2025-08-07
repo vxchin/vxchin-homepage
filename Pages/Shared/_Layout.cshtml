@@ -16,19 +16,12 @@
 	<header>
 		@*<nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom box-shadow mb-3">*@
 		<nav class="navbar navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
+            <div class="container d-flex justify-content-between align-items-center">
 				<a class="navbar-brand" asp-area="" asp-page="/Index">秦文轩的个人空间</a>
-@*				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-						aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
+				<!-- Dark/Light Mode Toggle Button -->
+				<button class="theme-toggle" onclick="toggleTheme()" aria-label="切换深浅色主题">
+					<span id="theme-icon">🌙</span>
 				</button>
-				<div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-					<ul class="navbar-nav flex-grow-1">
-						<li class="nav-item">
-							<a class="nav-link text-dark" asp-area="" asp-page="/Index">首页</a>
-						</li>
-					</ul>
-				</div>*@
 			</div>
 		</nav>
 	</header>
