@@ -2,24 +2,36 @@
 @model IndexModel
 @{
     ViewData["Title"] = "首页";
-    ViewData["Description"] = "秦文轩的个人空间，.NET 程序员，专注于 DevExpress WinForms 和 ASP.NET Core 应用开发。";
-    ViewData["Keywords"] = "秦文轩, vxchin, .NET, DevExpress, WinForms, ASP.NET Core, 博客园, GitHub, Gitee";
+    ViewData["Description"] = "秦文轩的个人空间，.NET 程序员，主要从事 DevExpress WinForms 桌面应用与基于 ABP Framework 的 ASP.NET Core 服务端开发。";
+    ViewData["Keywords"] = "秦文轩, vxchin, .NET, DevExpress, WinForms, ASP.NET Core, ABP, MQTT, 博客园, GitHub, Gitee";
 }
 
 <div class="hero p-5 mb-4 rounded-3">
     <div class="container-fluid py-4">
         <h1 class="display-5 fw-bold">秦文轩</h1>
-        <p class="lead text-body-secondary">来自陕西西安的 .NET 程序员，“新生代农民工”一枚。</p>
-        <p class="mb-3">MCP，.NET Framework 2.0 时代进入 .NET 生态的老 .NETer 了。</p>
-        <p class="fw-semibold mb-2">目前工作主要涉及的技术方向：</p>
+        <p class="lead text-body-secondary">来自陕西西安的 .NET 程序员。</p>
+        <ul class="list-unstyled mb-4">
+            <li class="mb-1">微软认证专家（MCP），从 .NET Framework 2.0 时代起使用 .NET。</li>
+            <li class="mb-1">项目一半是 .NET Framework 老系统，一半在跟进 .NET 新版本，不少需要同时兼容 .NET Framework 4.6.2 和 .NET 8。</li>
+            <li>服务端开发以 ABP Framework 为主。</li>
+        </ul>
+        <p class="fw-semibold mb-2">主要技术方向：</p>
         <ul class="list-unstyled mb-0">
             <li class="d-flex align-items-center gap-2 mb-2">
                 <span class="badge text-bg-primary">Desktop</span>
-                基于 DevExpress WinForms 的客户端应用开发
+                基于 DevExpress WinForms 的桌面应用开发，以及客户端的模块化、插件化架构。
             </li>
-            <li class="d-flex align-items-center gap-2">
+            <li class="d-flex align-items-center gap-2 mb-2">
+                <span class="badge text-bg-primary">Plugins</span>
+                .NET 托管插件框架，支持程序集动态加载、生命周期管理和依赖校验，并提供 ABP 集成与管理 API。
+            </li>
+            <li class="d-flex align-items-center gap-2 mb-2">
                 <span class="badge text-bg-primary">Web</span>
-                基于 ASP.NET Core 6+ 的应用服务开发
+                基于 ABP Framework 和 ASP.NET Core 的服务端开发，涉及认证授权、数据权限和 Swagger 文档治理。
+            </li>
+            <li class="d-flex align-items-center gap-2 mb-2">
+                <span class="badge text-bg-primary">Messaging</span>
+                基于 MQTT 的设备通信，包括统一消息模型规范、轻量级 Broker 和通信组件。
             </li>
         </ul>
     </div>
